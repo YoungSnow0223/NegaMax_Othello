@@ -1,0 +1,2 @@
+# NegaMax_Othello
+
