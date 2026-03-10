@@ -18,9 +18,11 @@ public class NegaMaxAI : IOthelloAI
         var validMoves = GetValidMoves(board, yourColor);
         if (validMoves.Count == 0) return null;
 
+        
         return validMoves[new System.Random().Next(validMoves.Count)];
     }
-
+    
+    //All available move
     private List<Move> GetValidMoves(BoardState board, DiscColor color)
     {
         var moves = new List<Move>();
@@ -36,7 +38,8 @@ public class NegaMaxAI : IOthelloAI
         }
         return moves;
     }
-
+    
+    //Determine if move is valid
     private bool IsValidMove(BoardState board, Move move, DiscColor color)
     {
         if (board.Grid[move.Row, move.Column] != DiscColor.None) return false;
