@@ -400,5 +400,14 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
+# allow bin folder for this project
+!Othello.AI.NegaMax/bin/
+
+# allow debug build
+!Othello.AI.NegaMax/bin/Debug/
+
+# allow net8 build
+!Othello.AI.NegaMax/bin/Debug/net8.0/
+
 # allow the dll
 !Othello.AI.NegaMax/bin/Debug/net8.0/Othello.AI.NegaMax.dll
