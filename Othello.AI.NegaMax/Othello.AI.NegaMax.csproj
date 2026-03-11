@@ -8,6 +8,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Othello.Contract\Othello.Contract.csproj" />
+      <ProjectReference Include="..\Othello.Engine\Othello.Engine.csproj" />
     </ItemGroup>
 
 </Project>
